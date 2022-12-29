@@ -1,0 +1,46 @@
+.tutorial{
+    background: #E1E0F6;
+    border-radius: 80px 80px 0px 0px;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    margin-top: -25%;
+    margin-bottom: -20%;
+}
+.tutorial-title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 150%;
+    color: #1E1B61;
+}
+.tutorial-title-bold{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 150%;
+    color: #1E1B61;
+}
+.tutorial-text{
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 150%;
+    color: #030309;
+}
+.desktop{
+    display: block;
+}
+.mobile{
+    display: none;
+}
+@media(max-width:576px){
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+}
