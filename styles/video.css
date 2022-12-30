@@ -1,5 +1,5 @@
 iframe{
-    width: 70vw;
+    width: 100%;
     aspect-ratio: 16/9;
     border-radius: 20px;
 }
@@ -10,7 +10,7 @@ iframe{
     line-height: 150%;
     color: #1E1B61;
 }
-@media(max-width:1024px){
+/* @media(max-width:1024px){
     iframe{
         width: 70vw;
     }
@@ -19,4 +19,4 @@ iframe{
     iframe{
         width: 90vw;
     }
-}
+} */

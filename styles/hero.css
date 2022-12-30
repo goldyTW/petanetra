@@ -3,7 +3,6 @@
     background: url('/images/hero-bg.png');
     background-size: cover;
     background-position: bottom;
-    /* min-height: 150vh; */
 }
 .hero-title{
     font-family: 'Montserrat';
@@ -11,38 +10,40 @@
     font-size: 2.5rem;
     line-height: 150%;
     color: #F9F9FB;
-    padding-left: 15%;
+    padding-left: 20%;
 }
 .hero-text{ 
     font-family: 'SF Pro Display';
     font-style: normal;
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: 150%;
     color: #F9F9FB;
-    padding-left: 15%;  
-    padding-right: 10%;
+    padding-left: 20%;  
+    padding-right: 14%;
 }
 .hero-download-wrapper{
-    padding-left: 15%;
+    padding-left: 20%;
 }
 .hero-download{
     width: 13vw;
     height: 4.6vw;
 }
 .hero-right{
-    padding-top: 8%;
-}
-.hero-right{
+    padding-top: 12%;
     align-self: baseline;
 }
 @media(max-width:1024px){
     .hero-left{
-        padding-top: 5%;
+        padding-top: 15%;
+    }
+    .hero-title, .hero-download-wrapper{
+        padding-left: 10%;
     }
     .hero-text{
         font-size: 16px;
         line-height: 150%;
+        padding-left: 10%;
     }
 }
 @media(max-width:768px){

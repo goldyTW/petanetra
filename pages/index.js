@@ -5,6 +5,7 @@ import Features from '../components/features';
 import Footer from '../components/footer';
 import Hero from '../components/Hero';
 import Navbar from '../components/Navbar';
+// import Navbar from '../components/Navbar2';
 import Tutorial from '../components/tutorial';
 import VideoSection from '../components/video-section';
 
@@ -12,7 +13,7 @@ export default function Home() {
   return (
     <>
      <Head>
-        <title>Peta Netra | Independence Navigation for Everyone!</title>
+        <title>PetaNetra | Independence Navigation for Everyone!</title>
         <meta name="description" content="Dengan teknologi Augmented Reality (AR) dan voice-over, PetaNetra bertujuan untuk menjadi mata bagi teman-teman tunanetra agar dapat bernavigasi secara mandiri di ruang publik indoor atau semi-outdoor." />
         <meta property="og:title" content="Peta Netra | Independence Navigation For Everyone!" />
         <meta property="og:description" content="Dengan teknologi Augmented Reality (AR) dan voice-over, PetaNetra bertujuan untuk menjadi mata bagi teman-teman tunanetra agar dapat bernavigasi secara mandiri di ruang publik indoor atau semi-outdoor." />
@@ -20,6 +21,7 @@ export default function Home() {
         <meta property="og:url" content="https://petanetra.com" />
       </Head>
       <Navbar></Navbar>
+      {/* <Navbar></Navbar> */}
       <Hero></Hero>
       <VideoSection></VideoSection>
       <Features></Features>

@@ -41,12 +41,6 @@ function Events() {
                             <h3>{item.name}</h3>
                         </div>
                     </div>
-                    {/* <div className='event-img-overlay'>
-                        <img className='event-img' alt={item.name} src={item.src} width="100%"></img>
-                    </div>
-                    <div className='event-name-wrapper text-center p-3'>
-                        <h2 className='event-name'>{item.name}</h2>
-                    </div> */}
                 </SwiperSlide>
             ))}
             </Swiper>
