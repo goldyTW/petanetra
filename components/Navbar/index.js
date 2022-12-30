@@ -2,7 +2,7 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import { Icon } from '@iconify/react'
 import Image from 'next/image'
-import Link from 'next/Link'
+import Link from 'next/link';
 import React, { useState } from 'react'
 
 function Navbar() {
