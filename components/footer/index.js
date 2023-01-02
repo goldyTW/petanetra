@@ -1,8 +1,10 @@
+/* eslint-disable @next/next/link-passhref */
 import React from 'react';
 import { useRouter } from 'next/router';
 import Link from "next/link";
 import moment from 'moment';
 import { Icon } from '@iconify/react';
+import i18n from '../../i18n';
 
 function Footer() {
   const router = useRouter();
@@ -21,26 +23,34 @@ function Footer() {
                 <div className='row justify-content-center pt-4'>
                     <div className="col-lg-2 col-md-3 col-12 p-md-2 px-4 py-2">
                         <h3 className='footer-title'>Perusahaan</h3>
-                        <Link href="/about-us"><p className='footer-text'>About Us</p></Link>
-                        <Link href="/features"><p className='footer-text'>Features</p></Link>
-                        <Link href="/event"><p className='footer-text'>Event</p></Link>
-                        <Link href="/article"><p className='footer-text'>Article</p></Link>
+                        <Link href={'/'}>
+                            <p className='footer-text'>{i18n.t('about')}</p>
+                        </Link>
+                        <Link href="/features">
+                            <p className='footer-text'>{i18n.t('features')}</p>
+                        </Link>
+                        <Link href="/event">
+                            <p className='footer-text'>{i18n.t('partner')}</p>
+                        </Link>
+                        <Link href="/article">
+                            <p className='footer-text'>{i18n.t('article')}</p>
+                        </Link>
                     </div>
                     <div className="col-lg-2 col-md-3 col-12 p-md-2 px-4 py-2">
-                        <h3 className='footer-title'>Product</h3>
+                        <h3 className='footer-title'>{i18n.t('product')}</h3>
                         <p className='footer-text'>PetaNetra</p>
                     </div>
                     <div className="col-lg-2 col-md-3 col-12 p-md-2 px-4 py-2">
-                        <h3 className='footer-title'>Kerjasama</h3>
-                        <p className='footer-text'>Pemilik Gedung</p>
-                        <p className='footer-text'>Komunitas</p>
+                        <h3 className='footer-title'>{i18n.t('partnership')}</h3>
+                        <p className='footer-text'>{i18n.t('owner')}</p>
+                        <p className='footer-text'>{i18n.t('community')}</p>
                     </div>
                     <div className="col-lg-2 col-md-3 col-12 p-md-2 px-4 py-2">
-                        <h3 className='footer-title'>Hubungi Kami</h3>
+                        <h3 className='footer-title'>{i18n.t('contact')}</h3>
                         <p className='footer-text'>admin@petanetra.id</p>
                     </div>
                     <div className="col-lg-3 col-md-5 col-12 p-md-2 px-4 py-2">
-                        <h3 className='footer-title'>Ikuti perkembangan kami </h3>
+                        <h3 className='footer-title'>{i18n.t('follow')}</h3>
                         <a className="social" target="_blank" href='https://facebook.com/' rel="noreferrer">
                             <Icon icon="ic:baseline-facebook" className='' style={{cursor:'pointer', marginTop:'-20px'}}/>
                         </a>
@@ -54,7 +64,7 @@ function Footer() {
                         <Icon icon="ph:youtube-logo-fill" className='' style={{cursor:'pointer', marginTop:'-20px'}}/>
                         </a>
 
-                        <h3 className='footer-title pt-3'>Unduh Aplikasi</h3>  
+                        <h3 className='footer-title pt-3'>{i18n.t('download')}</h3>  
                         <a className="social" target="_blank" href='#' rel="noreferrer">
                             <Icon icon="ic:baseline-apple" className='' style={{cursor:'pointer', marginTop:'-20px'}}/>
                         </a>          

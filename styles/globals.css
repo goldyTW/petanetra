@@ -2,10 +2,6 @@
   font-family: "SF Pro Display";
   src: url("../public/font/SFPRODISPLAYREGULAR.OTF");
 }
-.swiper-button-prev,
-.swiper-button-next {
-    color: #05445E !important;
-}
 /* :root {
   --max-width: 1100px;
   --border-radius: 12px;

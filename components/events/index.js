@@ -1,8 +1,10 @@
-import React from 'react'
+/* eslint-disable @next/next/no-img-element */
+import React, { useEffect } from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation } from 'swiper'
-// import "swiper/css/navigation"
+import "swiper/css/navigation"
 SwiperCore.use([Navigation]);
+import AOS from 'aos';
 
 const events = [
     {
@@ -22,10 +24,13 @@ const events = [
     }
 ]
 function Events() {
+    useEffect(() => {
+        AOS.init();
+      }, []);
   return (
     <div className='container py-5 mb-5'>
       <h1 className='event-title'>Event dan Penghargaan</h1>
-      <div className="row justify-content-center">
+      <div className="row justify-content-center" data-aos="fade-up">
         <div className='col-xl-10 col-12'>
             <Swiper
             slidesPerView={1}

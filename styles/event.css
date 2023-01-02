@@ -48,6 +48,13 @@
     line-height: 150%;
     color: #F9F9FB;
 }
+.swiper-button-prev,
+.swiper-button-next {
+    color: rgb(239, 239, 239) !important;
+    font-weight: bold;
+    font-size: 0.7rem;
+    margin: 20px;
+}
 @media(max-width:1024px){
     .card{
         width: 90vw;
@@ -56,6 +63,7 @@
 @media(max-width:576px){
     .card{
         aspect-ratio: 9/16;
+        width: 100%;
     }
     .card .poster img{
         width:300%;

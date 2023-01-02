@@ -5,7 +5,6 @@ import Features from '../components/features';
 import Footer from '../components/footer';
 import Hero from '../components/Hero';
 import Navbar from '../components/Navbar';
-// import Navbar from '../components/Navbar2';
 import Tutorial from '../components/tutorial';
 import VideoSection from '../components/video-section';
 
@@ -21,7 +20,6 @@ export default function Home() {
         <meta property="og:url" content="https://petanetra.com" />
       </Head>
       <Navbar></Navbar>
-      {/* <Navbar></Navbar> */}
       <Hero></Hero>
       <VideoSection></VideoSection>
       <Features></Features>

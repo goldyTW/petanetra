@@ -1,54 +1,79 @@
 /* eslint-disable react/no-unknown-property */
 /* eslint-disable @next/next/no-html-link-for-pages */
 import { Icon } from '@iconify/react'
-import Image from 'next/image'
 import Link from 'next/link';
 import React, { useState } from 'react'
+import { useRouter } from 'next/router'
+import i18n from '../../i18n';
 
 function Navbar() {
-  const [lang, setlang] = useState('ID');
+  const [lang, setlang] = useState('EN');
+  const [open, setopen] = useState(false);
+  const [active, setactive] = useState(false);
+  const router = useRouter()
+
+  const handleClick = (param) => {
+    setlang(param)
+    if(param == 'EN'){
+      router.push('/en','/en', {locale:'en'})
+    }
+    else{
+      router.push('/id', '/id', {locale:'id'})
+    }
+  }
+  
   return (
-    <nav className='navbar navbar-expand-lg navbar-light' id="navbarUtama">
+    <nav className={`navbar ${open ? 'open' : ''} navbar-expand-lg navbar-light`}>
       <div className='container py-3'>
         <Link href="/">
           <img src="/images/logo.png" alt='petanetra'></img>
         </Link>
-        <button className="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <Icon icon="charm:menu-hamburger"  
-          data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
-          style={{cursor:'pointer'}}/>
+        <button className="navbar-toggler" 
+         type="button"
+         data-bs-toggle="collapse"
+         data-bs-target="#navbarNav"
+         aria-controls="navbarNav"
+         aria-expanded="false"
+         aria-label="Toggle navigation"
+         onClick={() => setopen(!open)}
+         >
+          {!open ? <Icon icon="charm:menu-hamburger" /> : <Icon icon="material-symbols:close" />}
+          
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item my-auto mx-1">
-              <a className='nav-link' href="/" rel='noreferrer' target="_blank">
-                About Us
+          <ul className="navbar-nav ms-auto my-2 my-lg-0">
+            <li className={`nav-item ${active ? 'active':''} my-auto mx-1`}>
+              <a className='nav-link' aria-current="page" href="/" rel='noreferrer' target="_blank">
+              {i18n.t('about')}
               </a>
             </li>
-            <li className="nav-item my-auto mx-1">
-              <a className='nav-link' href="/" rel='noreferrer' target="_blank">
-                Features
+            <li className={`nav-item ${active ? 'active':''} my-auto mx-1`}>
+              <a className='nav-link' aria-current="page" href="/" rel='noreferrer' target="_blank">
+              {i18n.t('features')}
               </a>
             </li>
-            <li className="nav-item my-auto mx-1">
-              <a className='nav-link' href="/" rel='noreferrer' target="_blank">
-                Partner With Us
+            <li className={`nav-item ${active ? 'active':''} my-auto mx-1`}>
+              <a className='nav-link' aria-current="page" href="/" rel='noreferrer' target="_blank">
+              {i18n.t('partner')}
               </a>
             </li>
-            <li className="nav-item my-auto mx-1">
-              <a className='nav-link' href="/" rel='noreferrer' target="_blank">
-                Article
+            <li className={`nav-item ${active ? 'active':''} my-auto mx-1`}>
+              <a className='nav-link' aria-current="page" href="/" rel='noreferrer' target="_blank">
+              {i18n.t('article')}
               </a>
             </li>
             <a href="" target="_blank">
-              <button className="btn-try">Try PetaNetra</button>
+              <button className="btn-try">{i18n.t('coba_petanetra')}</button>
             </a>
             
-            <li class="nav-item dropdown">
+            <li className="dropdown m-lg-0 m-2">
             <button className="btn-lang">{lang}<Icon icon="tabler:chevron-down"/></button>
-                <div class="dropdown-content">
+                <div className="dropdown-content">
                   {
-                    lang == 'ID' ? <a onClick={() => setlang('EN')}>EN</a> : <a onClick={() => setlang('ID')}>ID</a>
+                    lang == 'ID' ?
+                    <a onClick={() => handleClick('EN')}>EN</a> 
+                    : 
+                    <a onClick={() => handleClick('ID')}>ID</a>
                   }
                 </div>
             </li>

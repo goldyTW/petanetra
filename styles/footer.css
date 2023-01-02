@@ -27,6 +27,7 @@ footer{
     font-size: 0.8rem;
     line-height: 150%;
     color: #F9F9FB;
+    text-decoration: none !important;
 }
 .copyright{
     font-family: 'Montserrat';

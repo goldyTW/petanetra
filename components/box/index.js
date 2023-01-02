@@ -1,12 +1,16 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Link from 'next/link';
+import AOS from 'aos';
 
 function Box() {
+    useEffect(() => {
+        AOS.init();
+      }, []);
   return (
     <div className='container py-5'>
         <div className='row justify-content-center'>
             <div className='col-xl-10 col-12'>
-                <div className='box px-4 py-5'>
+                <div data-aos="fade-down" className='box px-4 py-5'>
                     <div className='row justify-content-center'>
                         <div className='col-lg-4 col-md-6 col-12 text-center align-self-center'>
                             <img src='/images/boximg.png' width="90%"></img>
