@@ -16,8 +16,8 @@ export default function Home() {
         <meta name="description" content="Dengan teknologi Augmented Reality (AR) dan voice-over, PetaNetra bertujuan untuk menjadi mata bagi teman-teman tunanetra agar dapat bernavigasi secara mandiri di ruang publik indoor atau semi-outdoor." />
         <meta property="og:title" content="Peta Netra | Independence Navigation For Everyone!" />
         <meta property="og:description" content="Dengan teknologi Augmented Reality (AR) dan voice-over, PetaNetra bertujuan untuk menjadi mata bagi teman-teman tunanetra agar dapat bernavigasi secara mandiri di ruang publik indoor atau semi-outdoor." />
-        <meta property="og:image" content="/images/" />
-        <meta property="og:url" content="https://petanetra.com" />
+        <meta property="og:image" content="/images/LogoRounded.png" />
+        <meta property="og:url" content="https://petanetra.id" />
       </Head>
       <Navbar></Navbar>
       <Hero></Hero>

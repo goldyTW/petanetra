@@ -43,26 +43,26 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto my-2 my-lg-0">
             <li className={`nav-item ${active ? 'active':''} my-auto mx-1`}>
-              <a className='nav-link' aria-current="page" href="/" rel='noreferrer' target="_blank">
+              <a className='nav-link' aria-current="page" href="#about" rel='noreferrer'>
               {i18n.t('about')}
               </a>
             </li>
             <li className={`nav-item ${active ? 'active':''} my-auto mx-1`}>
-              <a className='nav-link' aria-current="page" href="/" rel='noreferrer' target="_blank">
+              <a className='nav-link' aria-current="page" href="#features" rel='noreferrer'>
               {i18n.t('features')}
               </a>
             </li>
             <li className={`nav-item ${active ? 'active':''} my-auto mx-1`}>
-              <a className='nav-link' aria-current="page" href="/" rel='noreferrer' target="_blank">
+              <a className='nav-link' aria-current="page" href="/" rel='noreferrer'>
               {i18n.t('partner')}
               </a>
             </li>
             <li className={`nav-item ${active ? 'active':''} my-auto mx-1`}>
-              <a className='nav-link' aria-current="page" href="/" rel='noreferrer' target="_blank">
+              <a className='nav-link' aria-current="page" href="/" rel='noreferrer'>
               {i18n.t('article')}
               </a>
             </li>
-            <a href="" target="_blank">
+            <a href="">
               <button className="btn-try">{i18n.t('coba_petanetra')}</button>
             </a>
             

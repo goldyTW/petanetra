@@ -23,13 +23,13 @@ function Footer() {
                 <div className='row justify-content-center pt-4'>
                     <div className="col-lg-2 col-md-3 col-12 p-md-2 px-4 py-2">
                         <h3 className='footer-title'>Perusahaan</h3>
-                        <Link href={'/'}>
+                        <Link href="#about">
                             <p className='footer-text'>{i18n.t('about')}</p>
                         </Link>
-                        <Link href="/features">
+                        <Link href="#features">
                             <p className='footer-text'>{i18n.t('features')}</p>
                         </Link>
-                        <Link href="/event">
+                        <Link href="/partner">
                             <p className='footer-text'>{i18n.t('partner')}</p>
                         </Link>
                         <Link href="/article">
@@ -51,21 +51,21 @@ function Footer() {
                     </div>
                     <div className="col-lg-3 col-md-5 col-12 p-md-2 px-4 py-2">
                         <h3 className='footer-title'>{i18n.t('follow')}</h3>
-                        <a className="social" target="_blank" href='https://facebook.com/' rel="noreferrer">
+                        <a className="social" target="_blank" href='https://www.facebook.com/petanetra' rel="noreferrer">
                             <Icon icon="ic:baseline-facebook" className='' style={{cursor:'pointer', marginTop:'-20px'}}/>
                         </a>
-                        <a className="social" target="_blank" href='https://www.linkedin.com/' rel="noreferrer">
+                        <a className="social" target="_blank" href='https://www.linkedin.com/company/petanetra/' rel="noreferrer">
                             <Icon icon="mdi:linkedin" className='' style={{cursor:'pointer', marginTop:'-20px'}}/>
                         </a>
-                        <a className="social" target="_blank" href='https://instagram.com/' rel="noreferrer">
+                        <a className="social" target="_blank" href='https://www.instagram.com/petanetra/' rel="noreferrer">
                             <Icon icon="ph:instagram-logo-fill" className='' style={{cursor:'pointer', marginTop:'-20px'}}/>
                         </a>
-                        <a className="social" target="_blank" href='https://twitter.com/' rel="noreferrer">
+                        <a className="social" target="_blank" href='https://www.youtube.com/@petanetra' rel="noreferrer">
                         <Icon icon="ph:youtube-logo-fill" className='' style={{cursor:'pointer', marginTop:'-20px'}}/>
                         </a>
 
                         <h3 className='footer-title pt-3'>{i18n.t('download')}</h3>  
-                        <a className="social" target="_blank" href='#' rel="noreferrer">
+                        <a className="social" target="_blank" href='https://apps.apple.com/id/app/petanetra-navigasi-tunanetra/id1583207456' rel="noreferrer">
                             <Icon icon="ic:baseline-apple" className='' style={{cursor:'pointer', marginTop:'-20px'}}/>
                         </a>          
                     </div>

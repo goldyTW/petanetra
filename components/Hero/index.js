@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function Hero() {
@@ -5,11 +6,13 @@ function Hero() {
     <section className='hero-wrapper'>
       <div className='container-fluid'>
         <div className='row justify-content-between'>
-          <div className='col-lg-7 col-md-6 col-12 align-self-center hero-left'>
+          <div className='col-lg-7 col-md-6 col-12 align-self-center hero-left' id='about'>
             <h3 className='hero-title'>Independence Navigation <br></br>For Everyone</h3>
             <p className='hero-text'>Dengan teknologi Augmented Reality (AR) dan voice-over, PetaNetra bertujuan untuk menjadi mata bagi teman-teman tunanetra agar dapat bernavigasi secara mandiri di ruang publik indoor atau semi-outdoor.</p>
             <div className='mt-4 hero-download-wrapper'>
+              <Link href="https://apps.apple.com/id/app/petanetra-navigasi-tunanetra/id1583207456">
               <img src='/images/hero-download.png' className="hero-download"></img>
+              </Link>
             </div>
           </div>
           <div className='col-lg-5 col-md-6 col-12 align-self-baseline hero-right'>

@@ -39,7 +39,7 @@ export default function App({ Component, pageProps }) {
         crossOrigin="anonymous"
       />
 
-      <link rel="shortcut icon" type="image/x-icon" href="/images/logo.png"></link>
+      <link rel="shortcut icon" type="image/x-icon" href="/images/LogoRounded.png"></link>
     </Head>
     <Component {...pageProps} />
     </>
