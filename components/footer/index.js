@@ -73,7 +73,7 @@ function Footer() {
                 </div>
                 <div className='row justify-content-center'>
                     <div className="col-12 text-center py-4">
-                        <span className="copyright">© Copyright {year} by PetaNetra Team | Made by WebsiteSimple.id</span>
+                        <span className="copyright">© Copyright {year} by PetaNetra Team | Made by <a href='https://websitesimple.id/' target="_blank" style={{textDecoration:'none', fontWeight:'bold', color:'white'}}>WebsiteSimple.id</a></span>
                     </div>
                 </div>
                 </div>

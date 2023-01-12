@@ -12,16 +12,16 @@ const events = [
         name:'Top 10 dalam Indigo Challenge pada 22 Oktober 2022',
         src:'/images/eventimg.png'
     },
-    {
-        id:2,
-        name:'eventname2',
-        src:'/images/eventimg.png'
-    },
-    {
-        id:3,
-        name:'eventname3',
-        src:'/images/eventimg.png'
-    }
+    // {
+    //     id:2,
+    //     name:'eventname2',
+    //     src:'/images/eventimg.png'
+    // },
+    // {
+    //     id:3,
+    //     name:'eventname3',
+    //     src:'/images/eventimg.png'
+    // }
 ]
 function Events() {
     useEffect(() => {

@@ -30,7 +30,6 @@
     line-height: 150%;
     color: #030309;
 }
-
 @media(max-width:576px){
     .tuto2{
         flex-direction: column-reverse;

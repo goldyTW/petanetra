@@ -12,7 +12,7 @@ function Tutorial() {
                 <div className='col-xl-11 col-12'>
                     <div data-aos="fade-up" className='row my-5'>
                         <div className='col-md-4 col-12 text-center'>
-                            <img src='/images/tutorial1.png' width="80%"></img>
+                            <img className='tutorial-img' src='/images/tutorial1.png' width="80%"></img>
                         </div>
                         <div className='col-md-7 col-12 align-self-center'>
                             <h2 className='tutorial-title text-center text-md-start'>Persiapkan diri menggunakan aplikasi melalui <span className='tutorial-title-bold'>tutorial interaktif</span></h2>
@@ -25,12 +25,12 @@ function Tutorial() {
                             <p className='tutorial-text text-md-end text-center'>Dengan teknologi AR, PetaNetra dapat mendeteksi dan memberitahukan lokasi awal tunanetra berdiri. Selain itu, tunanetra juga dapat mengetahui area-area dalam gedung yang dapat mereka kunjungi. </p>
                         </div>
                         <div className='col-md-4 col-12 text-center'>
-                            <img src='/images/tutorial1.png' width="80%"></img>
+                            <img className='tutorial-img' src='/images/tutorial2.png' width="80%"></img>
                         </div>
                     </div>
                     <div data-aos="fade-up" className='row my-5'>
                         <div className='col-md-4 col-12 text-center'>
-                            <img src='/images/tutorial1.png' width="80%"></img>
+                            <img className='tutorial-img' src='/images/tutorial3.png' width="80%"></img>
                         </div>
                         <div className='col-md-7 col-12 align-self-center'>
                             <h2 className='tutorial-title text-center text-md-start'>Mulai <span className='tutorial-title-bold'>navigasi mandirimu! </span></h2>
