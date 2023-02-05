@@ -9,19 +9,29 @@ import AOS from 'aos';
 const events = [
     {
         id:1,
-        name:'Top 10 dalam Indigo Challenge pada 22 Oktober 2022',
-        src:'/images/eventimg.png'
+        name:'PetaNetra menjadi salah satu peserta program Apple Academy & Apple Entrepreneur camp USA 2022',
+        src:'/images/event1.jpeg'
     },
-    // {
-    //     id:2,
-    //     name:'eventname2',
-    //     src:'/images/eventimg.png'
-    // },
-    // {
-    //     id:3,
-    //     name:'eventname3',
-    //     src:'/images/eventimg.png'
-    // }
+    {
+        id:2,
+        name:'Liputan dari berbagai media',
+        src:'/images/event2.jpeg'
+    },
+    {
+        id:3,
+        name:'Juara 2 kompetisi Identik Kementrian komunikasi dan informatika 2022',
+        src:'/images/event3.jpeg'
+    },
+    {
+        id:4,
+        name:'Top 10 Indigo Competition 2022',
+        src:'/images/event4.jpeg'
+    },
+    {
+        id:5,
+        name:'Top 10 Nexspace Competition [iDEAFEST 2022]',
+        src:'/images/event5.jpeg'
+    }
 ]
 function Events() {
     useEffect(() => {

@@ -62,7 +62,7 @@ function Navbar() {
               {i18n.t('article')}
               </a>
             </li>
-            <a href="">
+            <a href="https://apps.apple.com/id/app/petanetra-navigasi-tunanetra/id1583207456">
               <button className="btn-try">{i18n.t('coba_petanetra')}</button>
             </a>
             
