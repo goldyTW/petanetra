@@ -1,4 +1,5 @@
 import React from 'react'
+import i18n from '../../i18n';
 
 function Features() {
   return (
@@ -9,22 +10,22 @@ function Features() {
                     <div className='col-lg-4 col-md-6 col-12 p-3'>
                         <div className='features-card text-center p-3'>
                             <img src='/images/features1.png' alt='deteksi lokasi' width="80%"></img>
-                            <h3 className='features-title'>Mendeteksi Lokasi</h3>
-                            <p className='features-text'>PetaNetra akan mendeteksi lokasi awal Anda berdiri sebelum mengarahkan ke tempat tujuan.</p>
+                            <h3 className='features-title'>{i18n.t('deteksilokasi')}</h3>
+                            <p className='features-text'>{i18n.t('deteksilokasidesc')}</p>
                         </div>
                     </div>
                     <div className='col-lg-4 col-md-6 col-12 p-3'>
                         <div className='features-card text-center p-3'>
                             <img src='/images/features2.png' alt='navigasi akurat' width="80%"></img>
-                            <h3 className='features-title'>Navigasi Akurat</h3>
-                            <p className='features-text'>PetaNetra mengarahkan secara akurat dengan menggunakan arah jarum jam dan pemberitahuan jarak dalam satuan meter.</p>
+                            <h3 className='features-title'>{i18n.t('navigasiakurat')}</h3>
+                            <p className='features-text'>{i18n.t('navigasiakuratdesc')}</p>
                         </div>
                     </div>
                     <div className='col-lg-4 col-md-6 col-12 p-3'>
                         <div className='features-card text-center p-3'>
                             <img src='/images/features3.png' alt='instruksi suara' width="70%"></img>
-                            <h3 className='features-title'>Instruksi Melalui Suara dan Getaran</h3>
-                            <p className='features-text'>PetaNetra menggunakan haptics feedback berupa getaran dan voice-over untuk menginformasikan instruksi-instruksi yang ada di aplikasi.</p>
+                            <h3 className='features-title'>{i18n.t('instruksisuara')}</h3>
+                            <p className='features-text'>{i18n.t('instruksisuaradesc')}</p>
                         </div>
                     </div>
                 </div>

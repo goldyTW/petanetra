@@ -5,6 +5,7 @@ import Features from '../components/features';
 import Footer from '../components/footer';
 import Hero from '../components/Hero';
 import Navbar from '../components/Navbar';
+import Testimonies from '../components/testimonies';
 import Tutorial from '../components/tutorial';
 import VideoSection from '../components/video-section';
 
@@ -24,6 +25,7 @@ export default function Home() {
       <VideoSection></VideoSection>
       <Features></Features>
       <Tutorial></Tutorial>
+      <Testimonies></Testimonies>
       <Box></Box>
       <Events></Events>
       <Footer></Footer>

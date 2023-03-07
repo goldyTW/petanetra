@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import Link from 'next/link';
 import AOS from 'aos';
+import i18n from '../../i18n';
 
 function Box() {
     useEffect(() => {
@@ -16,9 +17,9 @@ function Box() {
                             <img src='/images/boximg.png' width="90%"></img>
                         </div>
                         <div className='col-lg-7 col-md-6 col-12 p-md-2 p-4 align-self-center'>
-                            <h2 className='box-title'>Ayo bantu tunanetra dengan menjadi bagian #TemanJalanMu</h2>
-                            <p className='box-text'>Untuk mewujudkan navigasi mandiri bagi semua orang, PetaNetra memerlukan kerjasama dari berbagai pihak, terutama <b>pemilik gedung</b> agar kami dapat menyediakan peta dalam aplikasi Petanetra, serta <b>komunitas</b> untuk mengembangkan aplikasi ini lebih baik lagi.</p>
-                            <Link href="mailto:admin@petanetra.id"><button className='px-4 py-2 box-btn'> Contact Us</button></Link>
+                            <h2 className='box-title'>{i18n.t('boxtitle')}</h2>
+                            <p className='box-text'>{i18n.t('boxdesc1')} <b>{i18n.t('boxdesc1bold')}</b> {i18n.t('boxdesc2')} <b>{i18n.t('boxdesc2bold')}</b> {i18n.t('boxdesc3')}</p>
+                            <Link href="mailto:admin@petanetra.id"><button className='px-4 py-2 box-btn'> {i18n.t('contactus')}</button></Link>
                         </div>
                     </div>
                 </div>

@@ -10,6 +10,7 @@ import '../styles/box.css'
 import '../styles/event.css'
 import '../styles/footer.css'
 import '../styles/navbar.css'
+import '../styles/testimonies.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import "swiper/swiper.min.css";
 import i18n from '../i18n';
